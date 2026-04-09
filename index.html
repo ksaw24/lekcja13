@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz rejestracyjny</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        label { display: block; margin-top: 10px; }
+        input { padding: 5px; width: 250px; }
+        .error { color: red; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<h2>Rejestracja</h2>
+
+<form id="registerForm">
+    <label>Imię:
+        <input type="text" name="name">
+    </label>
+
+    <label>Email:
+        <input type="email" name="email">
+    </label>
+
+    <label>Nazwa użytkownika:
+        <input type="text" name="username">
+    </label>
+
+    <label>Wiek:
+        <input type="text" name="age">
+    </label>
+
+    <label>Hasło:
+        <input type="password" name="password" id="password">
+    </label>
+
+    <label>Powtórz hasło:
+        <input type="password" name="confirmPassword">
+    </label>
+
+    <br><br>
+    <button type="submit">Zarejestruj</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
